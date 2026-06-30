@@ -32,4 +32,5 @@ El diseño incluye:
 - Layout responsivo con `grid` y `clamp()`  
 - Animaciones sutiles en el modal
 
-El proyecto se encuentra publicado en firebase: href="https://buscador-de-peliculas-y-series.web.app
+Puedes ver la app funcionando en el siguiente vinculo:
+href="https://buscador-de-peliculas-y-series.web.app
