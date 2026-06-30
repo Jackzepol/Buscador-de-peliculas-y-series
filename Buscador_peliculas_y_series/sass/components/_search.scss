@@ -1,0 +1,53 @@
+
+
+    @use 'sass:color';
+    @use '../utils/variables' as var;
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: var.$spacing-m;
+        padding: var.$spacing-l;
+        background-color: var.$color-light-alt;
+
+        &__label {
+            font-size: clamp(1rem, 1.2rem, 1.5rem);
+            font-family: var.$font-secondary;
+            color: var.$color-primary;
+        }
+
+        &__input {
+            width: 100%;
+            max-width: 400px;
+            padding: var.$spacing-m;
+            border: 2px solid var.$color-border;
+            border-radius: 0.4rem;
+            font-size: clamp(1rem, 1.2rem, 1.5rem);
+            font-family: var.$font-main;
+            transition: border-color 0.3s ease;
+
+            &:focus {
+                border-color: var.$color-primary;
+                outline: none;
+            }
+        }
+
+        &__button {
+            width: 100%;
+            max-width: 200px;
+            background-color: var.$color-secondary;
+            color: var.$color-light;
+            padding: 0.7rem 1.4rem;
+            border: none;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            font-size: clamp(1rem, 1.2rem, 1.5rem);
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: color.scale(var.$color-primary, $lightness:-8%);
+            }
+        }
+    }

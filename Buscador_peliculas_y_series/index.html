@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Explorador de películas y series</h1>
+        <p class="header__subtitle">Encuentra información de películas y series</p>
+    </header>
+
+    <main>
+        <form class="search">
+            <label class="search__label" for="search-input">Buscar película o serie</label>
+            <input class="search__input" id="search-input" type="text" placeholder="Ej. Shogun">
+            <button class="search__button" id="button-search" type="button">Búsqueda</button>
+        </form>
+
+        <section class="results" id="results">
+            
+        </section>
+
+        <dialog class="modal" id="modal-details">
+            <button class="modal__close" type="button" aria-label="Cerrar detalles">Cerrar</button>
+            <img class="modal__image" src="URL" alt="Poster de la película">
+            <h2 class="modal__title">Título de la película</h2>
+            <p class="modal__genres">Géneros: Drama, Acción</p>
+            <p class="modal__rating">⭐ 8.4 / 10</p>
+            <p class="modal__date">Fecha de estreno: 2006-02-17</p>
+            <h3 class="modal__subtitle">Protagonistas</h3>
+            <ul class="modal__cast">
+                <li>Actor 1</li>
+                <li>Actor 2</li>
+                <li>Actor 3</li>
+            </ul>
+            <h3 class="modal__subtitle">Sinopsis</h3>
+            <p class="modal__summary">
+                Aquí va la sinopsis completa de la película o serie.
+            </p>
+        </dialog>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">Desarrollado por Ismael © 2026</p>
+        <nav class="footer__nav">
+            <a class="footer__link" href="https://github.com/TU_USUARIO/TU_REPO" target="_blank">GitHub</a>
+            <a class="footer__link" href="https://TU_PROYECTO.firebaseapp.com" target="_blank">Sitio en Firebase</a>
+        </nav>
+        <p class="footer__credits">Datos obtenidos desde la API de TVMaze</p>
+    </footer>
+</body>
+</html>
+
+
+<!--
+<article class="card">
+    <img class="card__image" src="URL" alt="Poster de la película">
+    <h2 class="card__title">Título de prueba</h2>
+    <p class="card__genre">Género de la película o serie</p>
+    <p class="card__date">fecha de estreno</p>
+    <p class="card__rating">Rating de la película o serie</p>
+    <button class="card__button">Ver detalles</button>
+</article> -->

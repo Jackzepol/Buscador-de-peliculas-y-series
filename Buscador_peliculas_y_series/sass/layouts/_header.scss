@@ -1,0 +1,22 @@
+
+@use '../utils/variables' as var;
+
+.header {
+    background-color: var.$color-primary;
+    color: var.$color-light;
+    text-align: center;
+    padding: var.$spacing-xl var.$spacing-m;
+
+    &__title {
+        font-size: var.$font-size-title;
+        font-weight: 700;
+        margin-bottom: var.$spacing-s;
+    }
+
+    &__subtitle {
+        font-size: var.$font-size-subtitle;
+        font-weight: 300;
+        opacity: 0.9;
+    }
+
+}

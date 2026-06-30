@@ -1,0 +1,33 @@
+
+
+@use '../utils/variables' as var;
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: var.$spacing-xl;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var.$color-primary;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: var.$spacing-m;
+    font-size: var.$font-size-base;
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: var.$spacing-m;
+    }
+
+    &__link {
+        color: #fff;
+    }
+}

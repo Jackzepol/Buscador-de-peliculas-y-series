@@ -1,0 +1,56 @@
+
+
+@use '../utils/variables' as var;
+
+@media (max-width: var.$bp-tablet) {
+    .header {
+        padding: var.$spacing-m;
+    }
+
+    .search {
+        display:flex;
+        flex-direction: column;
+        margin-top: 4px;
+        gap: var.$spacing-s;
+        padding: var.$spacing-s;
+
+        &__input {
+            max-width: 90%;
+        }
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    #modal-details {
+        padding: var.$spacing-l;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: var.$spacing-m;
+
+        &__text,
+        &__link,
+        &__credits {
+            font-size: var.$font-size-base;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: var.$bp-mobile) {
+    .header {
+        &__title {
+            font-size: var.$font-size-subtitle;
+        }
+
+        &__subtitle {
+            font-size: var.$font-size-small;
+        }
+    }
+
+}
+
